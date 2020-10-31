@@ -2,9 +2,11 @@ import { FlexibleLoggerChannel } from './flexible-logger-channel';
 import { FlexibleLoggerOptions } from './flexible-logger-options';
 
 export class FlexibleLogger {
-    public channels: FlexibleLoggerChannel[];
+    public channels: FlexibleLoggerChannel[] = [];
 
     constructor(options?: FlexibleLoggerOptions) {
-        this.channels = options?.channels || [];
+        if (options) {
+            this.channels = options?.channels || this.channels;
+        }
     }
 }
