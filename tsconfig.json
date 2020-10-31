@@ -3,9 +3,9 @@
         "target": "ESNext",
         "module": "CommonJS",
         "declaration": true,
-        "outDir": "./lib",
+        "outDir": "./dist",
         "strict": true
     },
-    "include": ["src"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules"]
 }
