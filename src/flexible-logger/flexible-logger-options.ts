@@ -1,5 +1,5 @@
-import { FlexibleLoggerChannel } from './flexible-logger-channel';
+import { LogChannel } from './channels';
 
 export interface FlexibleLoggerOptions {
-    channels?: FlexibleLoggerChannel[];
+    channels?: LogChannel[];
 }

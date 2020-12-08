@@ -1,1 +1,7 @@
-export { FlexibleLogger, FlexibleLoggerChannel, FlexibleLoggerOptions } from './flexible-logger';
+export {
+    FlexibleLogger,
+    FlexibleLoggerOptions,
+    LogChannel,
+    LogEvent,
+    LogLevel,
+} from './flexible-logger';
